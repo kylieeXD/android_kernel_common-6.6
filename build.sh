@@ -74,7 +74,7 @@ if [ -f "Makefile" ]; then
 fi
 
 # Add KernelSU and SuSFS
-curl -LSs "https://raw.githubusercontent.com/kylieeXD/SukiSU-Ultra/main/kernel/setup.sh" | bash -s susfs-main
+curl -LSs "https://raw.githubusercontent.com/Mr-Morat/KernelSU-Next/susfs/kernel/setup.sh" | bash -s susfs
 cp "$KERNEL_PATCHES/next/kernelsu_and_susfs.patch" .
 cp "$KERNEL_PATCHES/next/fix-task_mmu.c" .
 patch -p1 < kernelsu_and_susfs.patch || patch -p1 < fix-task_mmu.c
